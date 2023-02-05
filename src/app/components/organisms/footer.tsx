@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <Box as="footer" bg="bg-surface" pt="32">
+    <Box as="footer" bg="bg-surface" py="16">
       <Container py={{ base: "3", lg: "4" }}>
         <HStack justify="space-between">
           <Text>
