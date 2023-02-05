@@ -13,7 +13,7 @@ export default function Head() {
         property="og:description"
         content="Ask AI what should you cook today."
       />
-      <meta property="og:image" content="https://www.onepot.app/onepot.png" />
+      <meta property="og:image" content="https://www.onepot.app/logo.png" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -22,7 +22,7 @@ export default function Head() {
         name="twitter:swaxeiprion"
         content="Ask AI what should you cook today."
       />
-      <meta name="twitter:image" content="https://www.onepot.app/onepot.png" />
+      <meta name="twitter:image" content="https://www.onepot.app/logo.png" />
       <meta name="twitter:site" content="@yhakamay" />
       <meta name="twitter:creator" content="@yhakamay" />
     </>
