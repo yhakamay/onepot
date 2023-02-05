@@ -15,12 +15,13 @@ import {
 } from "./components/atoms/my_chakra_components";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { useState } from "react";
+import { MealType } from "./types/meal_type";
 
 export default function Home() {
   const [time, setTime] = useState(30);
   const onTimeChange = (value: number) => setTime(value);
-  const [type, setType] = useState("");
-  const onTypeChange = (value: string) => setType(value);
+  const [type, setType] = useState<MealType>("lunch");
+  const onTypeChange = (value: MealType) => setType(value);
 
   return (
     <>
@@ -58,17 +59,13 @@ export default function Home() {
         <Text alignSelf="start" fontSize="lg">{`❷ Which meal?`}</Text>
         <Select
           placeholder="Select type"
-          onChange={(e) => onTypeChange(e.target.value)}
+          onChange={(e) => onTypeChange(e.target.value as MealType)}
         >
           <option value="breakfast">Breakfast</option>
           <option value="lunch">Lunch</option>
           <option value="dinner">Dinner</option>
         </Select>
-        <Button
-          w="full"
-          rightIcon={<BsFillArrowRightCircleFill />}
-          isDisabled={time === 0 || type === ""}
-        >
+        <Button w="full" rightIcon={<BsFillArrowRightCircleFill />}>
           Ask AI
         </Button>
       </VStack>
