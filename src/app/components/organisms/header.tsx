@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
 import {
@@ -15,7 +16,10 @@ export default function Header() {
         <Container py={{ base: "3", lg: "4" }}>
           <HStack justify="space-between">
             <Link href="/">
-              <Heading size="lg">OnePot</Heading>
+              <HStack>
+                <Image src="/logo.png" width={32} height={32} alt={"logo"} />
+                <Heading size="lg">OnePot</Heading>
+              </HStack>
             </Link>
             <Link
               href={"https://github.com/yhakamay/onepot"}
