@@ -1,3 +1,4 @@
+import { AnalyticsWrapper } from "./components/atoms/analytics";
 import { Container } from "./components/atoms/my_chakra_components";
 import Header from "./components/organisms/header";
 import MyChakraProvider from "./my_chakra_provider";
@@ -15,6 +16,7 @@ export default function RootLayout({
           <Header />
           <Container>{children}</Container>
         </MyChakraProvider>
+        <AnalyticsWrapper />
       </body>
     </html>
   );
