@@ -1,7 +1,4 @@
-import {
-  OpenAIStream,
-  OpenAIStreamPayload,
-} from "../../../utils/open_ai_atream";
+import { OpenAIStream, OpenAIStreamPayload } from "@/utils/open_ai_atream";
 
 if (!process.env.OPENAI_API_KEY) {
   throw new Error("Missing env var from OpenAI");
