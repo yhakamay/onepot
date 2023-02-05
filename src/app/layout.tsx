@@ -1,6 +1,4 @@
-"use client";
-
-import { Container } from "@chakra-ui/react";
+import { Container } from "./components/atoms/my_chakra_components";
 import Header from "./components/organisms/header";
 import MyChakraProvider from "./my_chakra_provider";
 

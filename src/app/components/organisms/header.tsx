@@ -1,7 +1,5 @@
-"use client";
-
-import { Box, Container, Heading } from "@chakra-ui/react";
 import Link from "next/link";
+import { Box, Container, Heading } from "../atoms/my_chakra_components";
 
 export default function Header() {
   return (
