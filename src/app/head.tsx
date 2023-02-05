@@ -13,10 +13,16 @@ export default function Head() {
         property="og:description"
         content="Ask AI what should you cook today."
       />
-      <meta property="og:image" content="/logo.png" />
+      <meta property="og:image" content="https://www.onepot.app/onepot.png" />
 
       {/* Twitter */}
-      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="OnePot" />
+      <meta
+        name="twitter:swaxeiprion"
+        content="Ask AI what should you cook today."
+      />
+      <meta name="twitter:image" content="https://www.onepot.app/onepot.png" />
       <meta name="twitter:site" content="@yhakamay" />
       <meta name="twitter:creator" content="@yhakamay" />
     </>
